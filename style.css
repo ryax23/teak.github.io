@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    width: 100%;
+}
+
+.menu {
+    background-color: #86c220;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.ertesites {
+    background-color: #d3eea3;
+    border: 1px solid #97cc3b;
+    color: black;
+    text-align: center;
+    border-style: dashed;
+    border-radius: 5px;
+}
+
+#bejelentkezes {
+    color:white;
+    border:1px #67b201 solid;
+    background-color: #b7d86e;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.bejelentkezesmezok {
+    background-color: black;
+}
+
+#kategoriak {
+    border-radius: 5px;
+    border:1px #67b201 solid;
+    background-color: #b7d86e;
+    margin-top: 5px;
+}
+
+#lista {
+    background-color: black;
+}
+
+#jobboldal {
+  
+        color:white;
+        border:1px #67b201 solid;
+        background-color: #b7d86e;
+        border-radius: 5px;
+        margin-top: 5px;
+    
+}

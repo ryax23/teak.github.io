@@ -1,0 +1,121 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="col-10 offset-1" style="color:#67b201; border:1px #67b201 solid">
+            
+            <div style="color:white; text-align: right">2018. szeptember 7. péntek, Regina napja van. Holnap Mária, Adrienn napja lesz.</div>
+            
+            <div class="menu">
+                    <nav class="navbar sticky-top navbar-expand-sm">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> 
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <a class="navbar-brand" href="#"></a>
+                            <ul class="navbar-nav">
+                            <li class="navbar-item">
+                                <a class="nav-link" href="#" style="color:white"><strong>Főoldal</strong></a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="#" style="color:white"><strong>Rólunk</strong></a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="#" style="color:white"><strong>Szállítási feltételek</strong></a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="#" style="color:white"><strong>Regisztráció</strong></a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="#" style="color:white"><i class="fa fa-shopping-cart">&nbsp;</i><strong>Kosár</strong></a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="#" style="color:white"><strong>Kapcsolat</strong></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </nav>
+            </div>
+
+            <div class="ertesites">
+                    Tisztelt Látogató! <br>
+                    A megrendelés leadásához nem szükséges regisztráció!
+            </div>
+      
+        <div class="row" >
+        <div class="col-3" >
+            <div id="kategoriak">
+            <div style="color:white; text-align: center; font-size:20px">Kategóriák</div>
+                  <br>
+            <div id="lista">
+                <ul>
+                    <li class="list-item">Zöld teák</li>
+                    <li class="list-item">Fehér teák</li>
+                    <li class="list-item">Fekete teák</li>
+                    <li class="list-item">Ajándékszettek</li>
+                    <li class="list-item">Egyéb kiegészítők</li>
+                </ul>          
+                <div style="color:white"> Ízesített teák</div>
+                <ul>
+                    <li class="list-item">Fehér tea alappal</li>
+                    <li class="list-item">Zöld tea alappal</li>
+                    <li class="list-item">Fekete tea alappal</li>
+                </ul>        
+             
+            </div>
+            </div>
+            <div id="bejelentkezes">
+                    <form>
+                            <div style="font-size:20px; color: white; text-align: center"><strong>Bejelentkezés</strong></div>
+                            <br>
+                        <div class="bejelentkezesmezok">
+                            <div class="form-group">
+                            <label for="név">Felhasználónév</label>
+                            <input class="form-control" type="text" placeholder="Írd be a felhasználóneved!">
+                            </div>
+                            <div class="form-group">
+                            <label for="jelszo">Jelszó:</label>
+                            <input class="form-control" type="password" placeholder="" name="jelszo" required id="jelszo">
+                            </div>
+                            <div class="form-group"><label>
+                            <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
+                            </label>
+                            <label>
+                            <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az Adatvédelmi szabályzatot.
+                            </label>
+                            </div>
+                            <div class="col-8 offset-2">
+                            <div class="form-group">
+                            <button type="button" class="btn btn-success btn-sm btn-block" id="bejelentkezes">Belépés</button>
+                            </div>
+                            </div>
+                           
+                            <label for="elfelejtettjelszo">Elfelejtette a jelszavát?</label>
+                            <button type="submit" class="btn btn-outline-success btn-sm btn-block" id="forgetpw">Új jelszót kérek</button>
+                               
+                            
+                            <label for="regisztracio">Még nem ügyfelünk?</label>
+                            <button type="button" class="btn btn-outline-success btn-sm btn-block" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
+                       
+                       
+                        
+                        </div>
+                        </form> 
+            
+            </div>
+            </div>
+        <div class="col-7 offset-1" style="background-color:#b7d86e" id="jobboldal">jobboldal</div>
+        </div>
+
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
