@@ -3,14 +3,14 @@ body {
     width: 100%;
 }
 
-.menu {
+#menu {
     background-color: #86c220;
     color: white;
-    margin: 5px;
+    margin-bottom:5px;
     border-radius: 5px;
 }
 
-.ertesites {
+#ertesites {
     background-color: #d3eea3;
     border: 1px solid #97cc3b;
     color: black;
@@ -29,6 +29,7 @@ body {
 
 .bejelentkezesmezok {
     background-color: black;
+    border-radius: 5px;
 }
 
 #kategoriak {
@@ -40,6 +41,7 @@ body {
 
 #lista {
     background-color: black;
+    border-radius: 5px;
 }
 
 #jobboldal {
