@@ -49,5 +49,5 @@ body {
         background-color: #b7d86e;
         border-radius: 5px;
         margin-top: 5px;
-    
+        height: fit-content;
 }
