@@ -53,3 +53,47 @@ body {
         margin-top: 5px;
         height: fit-content;
 }
+
+#product {
+        color:white;
+        border:1px #67b201 solid;
+        border-radius: 5px;
+        margin: 10px;
+        text-align: center;
+}
+
+#pricebox {
+        background-color: #b7d86e;
+        color:black;
+        border:1px #67b201 solid;
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+}
+
+#price {
+        text-align: center;
+        margin-top: 10px;
+}
+
+#reszletek {
+        text-align: center;
+}
+
+#alsomenu {
+        text-align: right;
+        color: white;
+        margin-top: 10px;
+}
+
+li {
+    display: inline;
+}
+
+
+.divider-vertical-second-menu{
+    margin: 0 5px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+ }
