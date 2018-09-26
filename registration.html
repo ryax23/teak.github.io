@@ -122,15 +122,151 @@
                         .:: Regisztrációs űrlap ::.
                         <br>
                         <br>
-                        <div style="text-align:justify">Itt lesz a regisztrációs űrlap.</div>
-                        <br>
-                        <a href="#" style="color:wheat">Vissza az előző oldalra</a>
-                        <br>
-                        <br>
+                        <div style="text-align:justify">A webáruházba történő regisztrációhoz, kérjük töltse ki az alábbi űrlapot.
+                            <br>
+                                (A *-al jelölt mezők kitöltése kötelező!)</div>
+                                <form><br> <div style="text-align: center">Személyes adatok</div><br>
+                                        <div class="form-group">
+                                            <div class="form-group row">
+                                                <label for="inlineFormInputName" class="col-sm-4 col-form-label">*Név</label>
+                                                <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Név">
+                                                </div>
+                                            </div>
+                                                
+                                            <div class="form-group row">
+                                                <label for="inputTax" class="col-sm-4 col-form-label">Adószám (vállalkozás esetén)</label>
+                                                <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="inputTax" placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputAddress" class="col-sm-4 col-form-label">*Utca/Házszám</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputCity" class="col-sm-4 col-form-label">*Település</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputState" class="col-sm-4 col-form-label">Ország</label>
+                                                <div class="col-md-8">
+                                                <select id="inputState" class="form-control">
+                                                <option selected>Válassz...</option>
+                                                <option>...</option>
+                                                </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputZip" class="col-sm-4 col-form-label">*Irányítószám</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                            </div>         
+                                        
+                    
+                                        <br>
+                                        <div style="text-align:center">Szállítási adatok</div>
+                                            <br>
+                                            <div class="form-group row">
+                                                <label for="inlineFormInputName" class="col-sm-4 col-form-label">*Név</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inlineFormInputName" placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputState" class="col-sm-4 col-form-label">Ország</label>
+                                                <div class="col-md-8">
+                                                <select id="inputState" class="form-control">
+                                                <option selected>Válassz...</option>
+                                                <option>...</option>
+                                                </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputCity" class="col-sm-4 col-form-label">*Település</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputZip" class="col-sm-4 col-form-label">*Irányítószám</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputAddress" class="col-sm-4 col-form-label">*Utca/Házszám</label>
+                                                <div class="col-md-8">
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                                </div>
+                                            </div>
+                                            
+                                        <br>
+
+                                        <div style="text-align:center">Kapcsolat</div>
+                                        <br>
+                                            <div class="form-group row">
+                                                <label for="inputEmail4" class="col-sm-4 col-form-label">*Email</label>
+                                                <div class="col-md-8">
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputPhone" class="col-sm-4 col-form-label">*Telefonszám</label>
+                                                <div class="col-md-8">
+                                                <input type="email" class="form-control" id="inputPhone" placeholder="+36301234567">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword4" class="col-sm-4 col-form-label">*Jelszó</label>
+                                                <div class="col-md-8">
+                                                <input type="password" class="form-control" id="inputPassword4" placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="inputPassword5" class="col-sm-4 col-form-label">*Jelszó újra</label>
+                                                <div class="col-md-8">
+                                                <input type="password" class="form-control" id="inputPassword5" placeholder="">
+                                                </div>
+                                            </div>
+                                        <br>
+                                        <div class="form-group">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                              Jegyezd meg az adataimat.
+                                            </label>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md text-center">
+                                        <button type="submit" class="btn btn-success">Regisztrálok</button>
+                                        </div>
+                                    </div>
+                                    
+                                      </form>
+                        
+                        </div>
                     </div>
-                  
+                    <a href="#" style="color:wheat">Vissza az előző oldalra</a>
                 </div>
-            </div>
+            
 
             
             <div style="color:white; font-size:13px">Az oldalon feltűntetett árak, bruttó árak! A 27%-os általános forgalmi adót tartamazzák.</div>
