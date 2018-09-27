@@ -6,6 +6,7 @@
             <script type="text/javascript" language="JavaScript" src="nevnap.js"></script>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+            <script type="text/javascript" language="JavaScript" src="script.js"></script>
         </head>
     <body>
         <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -86,31 +87,37 @@
                             <br>
                         <div class="bejelentkezesmezok">
                             <div class="form-group">
-                            <label for="név">Felhasználónév</label>
-                            <input class="form-control-sm" type="text" placeholder="Írja be felhasználónevét!">
+                                <div class="row">
+                                    <div class="col-md">  
+                                        <label for="exampleInputEmail1">E-mail cím</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="email" class="form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email cím">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <label for="exampleInputPassword1">Jelszó</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="password" class="form-control-sm" id="exampleInputPassword1" placeholder="Jelszó">
+                                    </div>
+                                </div>
+                            <div class="form-check" style="text-align:center">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Emlékezz rám</label>
                             </div>
-                            <div class="form-group">
-                            <label for="jelszo">Jelszó</label>
-                            <input class="form-control-sm" type="password" placeholder="" name="jelszo" required id="jelszo">
+                            <div class="col-md">
+                            <button type="submit" class="btn btn-success btn-sm btn-block">Belépés</button>
                             </div>
-                            <div class="form-group"><label>
-                            <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
-                            </label>
-                            <label>
-                            <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az <a href="#">Adatvédelmi szabályzatot</a>.
-                            </label>
-                            </div>
-                            <div class="col-8 offset-2">
-                            <div class="form-group">
-                            <button type="button" class="btn btn-success btn-sm btn-block" id="bejelentkezes">Belépés</button>
-                            </div>
-                            </div>
+                        </div>
+                            
                             <label for="elfelejtettjelszo">Elfelejtette a jelszavát?</label>
                             <button type="submit" class="btn btn-outline-success btn-sm btn-block" id="forgetpw">Új jelszót kérek</button>
                             <label for="regisztracio">Még nem ügyfelünk?</label>
                             <button type="button" class="btn btn-outline-success btn-sm btn-block" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
                         </div>
-                    </form> 
+                          </form>
             </div>
         </div>
         
@@ -146,7 +153,34 @@
                             </div>
                             <div class="col-md" id="reszletek">
                                 <a href="#" class="btn btn-outline-info btn-sm">Részletek</a>
-                                <button type="button" class="btn btn-success btn-sm" style="margin-top:3px">Kosárba</button>
+                                <button type="button" class="btn btn-success btn-sm" style="margin-top:3px" onclick="kosarba()" id="myBtn">
+                                        Kosárba
+                                    </button>
+                                    <div id="myModal" class="modal">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                    <div class="col-md">
+                                                <span class="close">&times;</span>
+                                                <h2>A termék bekerült a kosárba!</h2>
+                                                    </div>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>A termék megrendeléséhez, válassza a kosár megtekintése linket. <br>Amennyiben további termékeket kíván a kosárba helyezni, válassza a vásárlás folytatása lehetőséget.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                    <div class="col-md">
+                                                <h3>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Kosár megtekintése</a></div>
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Vásárlás folytatása</a></div>
+                                                    </div>
+                                                </h3>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                    </div>    
                             </div>
                             </div>
                         </div>
@@ -161,7 +195,32 @@
                                 </div>
                                 <div class="col-md" id="reszletek">
                                     <a href="#" class="btn btn-outline-info btn-sm">Részletek</a>
-                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px">Kosárba</button>
+                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px" onclick="kosarba()" id="myBtn1">Kosárba</button>
+                                    <div id="myModal" class="modal">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                    <div class="col-md">
+                                                <span class="close">&times;</span>
+                                                <h2>A termék bekerült a kosárba!</h2>
+                                                    </div>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>A termék megrendeléséhez, válassza a kosár megtekintése linket. <br>Amennyiben további termékeket kíván a kosárba helyezni, válassza a vásárlás folytatása lehetőséget.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                    <div class="col-md">
+                                                <h3>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Kosár megtekintése</a></div>
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Vásárlás folytatása</a></div>
+                                                    </div>
+                                                </h3>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
@@ -176,7 +235,32 @@
                                 </div>
                                 <div class="col-md" id="reszletek">
                                     <a href="#" class="btn btn-outline-info btn-sm">Részletek</a>
-                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px">Kosárba</button>
+                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px" onclick="kosarba()" id="myBtn2">Kosárba</button>
+                                    <div id="myModal" class="modal">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                    <div class="col-md">
+                                                <span class="close">&times;</span>
+                                                <h2>A termék bekerült a kosárba!</h2>
+                                                    </div>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>A termék megrendeléséhez, válassza a kosár megtekintése linket. <br>Amennyiben további termékeket kíván a kosárba helyezni, válassza a vásárlás folytatása lehetőséget.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                    <div class="col-md">
+                                                <h3>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Kosár megtekintése</a></div>
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Vásárlás folytatása</a></div>
+                                                    </div>
+                                                </h3>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
@@ -191,7 +275,32 @@
                                 </div>
                                 <div class="col-md" id="reszletek">
                                     <a href="#" class="btn btn-outline-info btn-sm">Részletek</a>
-                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px">Kosárba</button>
+                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px" onclick="kosarba()" id="myBtn3">Kosárba</button>
+                                    <div id="myModal" class="modal">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                    <div class="col-md">
+                                                <span class="close">&times;</span>
+                                                <h2>A termék bekerült a kosárba!</h2>
+                                                    </div>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>A termék megrendeléséhez, válassza a kosár megtekintése linket. <br>Amennyiben további termékeket kíván a kosárba helyezni, válassza a vásárlás folytatása lehetőséget.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                    <div class="col-md">
+                                                <h3>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Kosár megtekintése</a></div>
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Vásárlás folytatása</a></div>
+                                                    </div>
+                                                </h3>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
@@ -206,7 +315,32 @@
                                 </div>
                                 <div class="col-md" id="reszletek">
                                     <a href="#" class="btn btn-outline-info btn-sm">Részletek</a>
-                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px">Kosárba</button>
+                                    <button type="button" class="btn btn-success btn-sm" style="margin-top:3px" onclick="kosarba()" id="myBtn4">Kosárba</button>
+                                    <div id="myModal" class="modal">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                    <div class="col-md">
+                                                <span class="close">&times;</span>
+                                                <h2>A termék bekerült a kosárba!</h2>
+                                                    </div>
+                                              </div>
+                                              <div class="modal-body">
+                                                <p>A termék megrendeléséhez, válassza a kosár megtekintése linket. <br>Amennyiben további termékeket kíván a kosárba helyezni, válassza a vásárlás folytatása lehetőséget.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                    <div class="col-md">
+                                                <h3>
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Kosár megtekintése</a></div>
+                                                        <div class="col-md">
+                                                        <a href="#" style="color:#3a030f">Vásárlás folytatása</a></div>
+                                                    </div>
+                                                </h3>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>

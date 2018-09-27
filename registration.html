@@ -86,31 +86,37 @@
                             <br>
                         <div class="bejelentkezesmezok">
                             <div class="form-group">
-                            <label for="név">Felhasználónév</label>
-                            <input class="form-control-sm" type="text" placeholder="Írja be felhasználónevét!">
+                                <div class="row">
+                                    <div class="col-md">  
+                                        <label for="exampleInputEmail1">E-mail cím</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="email" class="form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email cím">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <label for="exampleInputPassword1">Jelszó</label>
+                                    </div>
+                                    <div class="col-md">
+                                        <input type="password" class="form-control-sm" id="exampleInputPassword1" placeholder="Jelszó">
+                                    </div>
+                                </div>
+                            <div class="form-check" style="text-align:center">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Emlékezz rám</label>
                             </div>
-                            <div class="form-group">
-                            <label for="jelszo">Jelszó</label>
-                            <input class="form-control-sm" type="password" placeholder="" name="jelszo" required id="jelszo">
+                            <div class="col-md">
+                            <button type="submit" class="btn btn-success btn-sm btn-block">Belépés</button>
                             </div>
-                            <div class="form-group"><label>
-                            <input type="checkbox" aria-checked="false" name="remember" style="margin-bottom:15px"> Remember me
-                            </label>
-                            <label>
-                            <input type="checkbox" aria-checked="false" name="gdpr" style="margin-bottom:15px"> Elfogadom az <a href="#">Adatvédelmi szabályzatot</a>.
-                            </label>
-                            </div>
-                            <div class="col-8 offset-2">
-                            <div class="form-group">
-                            <button type="button" class="btn btn-success btn-sm btn-block" id="bejelentkezes">Belépés</button>
-                            </div>
-                            </div>
+                        </div>
+                            
                             <label for="elfelejtettjelszo">Elfelejtette a jelszavát?</label>
                             <button type="submit" class="btn btn-outline-success btn-sm btn-block" id="forgetpw">Új jelszót kérek</button>
                             <label for="regisztracio">Még nem ügyfelünk?</label>
                             <button type="button" class="btn btn-outline-success btn-sm btn-block" id="registration" value="Open Window" onclick="regiszt()">Regisztráció</button>
                         </div>
-                    </form> 
+                          </form>
             </div>
         </div>
         
@@ -254,7 +260,12 @@
                                           <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck">
                                             <label class="form-check-label" for="gridCheck">
-                                              Jegyezd meg az adataimat.
+                                            Jegyezd meg az adataimat.
+                                            </label>
+                                            <br>
+                                            <input class="form-check-input" type="checkbox" id="gdprCheck" name="gdpr"> 
+                                            <label class="form-check-label" for="gdprCheck">
+                                            Elfogadom az <a href="#">Adatvédelmi szabályzatot</a>.
                                             </label>
                                           </div>
                                         </div>
