@@ -6,18 +6,19 @@
             <script type="text/javascript" language="JavaScript" src="nevnap.js"></script>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+            <script type="text/javascript" language="JavaScript" src="script.js"></script>
         </head>
     <body>
-
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <div class="col-10 offset-1" style="color:#67b201; border:1px #67b201 solid">
+
+        <div class="col-10 offset-1" style="color:#67b201; border:1px #67b201 solid; height: fit-content;">
             
         <h1 style="text-align:right; color:white; font-size:15px"><script language="JavaScript">
-                        kiir();
+            kiir();
         </script></h1>       
     
-    <div class="col-md" id="menu">
+        <div class="col-md" id="menu">
             <div class="row">  
                 <div class="col-md-9">
                     <nav class="navbar sticky-top navbar-expand-sm navbar-light">
@@ -55,15 +56,15 @@
                     </nav>
                 </div> 
                 <div class="col-md-3">
-                        <div style="color:white; margin:16px"><a href="#" style="color:red">0 termék</a> van a kosárban!</div>
+                        <div style="color:white; margin:16px"><a style="color:red">0</a> termék van a kosárban!</div>
                 </div>
             </div>
         </div>
-        
-            <div class="col-md" id="ertesites">
+
+        <div class="col-md" id="ertesites">
                     Tisztelt Látogató! <br>
                     A megrendelés leadásához nem szükséges regisztráció!
-            </div>
+        </div>
       
         <div class="row" >
         <div class="col-md-3" >
@@ -129,22 +130,36 @@
         
         <div class="col-md-9" >
                 <br>
-            <div class="container" id="jobboldal" style="background-color:#410411">
-                    <div class="col-md" style="color:white">
-                        <div style="text-align:justify">.:: Cégünkről ::.
-                            <br>
-                            <br>
-                                A Kneitner+Kneitner Hungary Bt. német-magyar alapítású import és szolgáltató vállalat, amely azért jött létre, hogy a legmagasabb minőségű, változatos termékpalettát hozza Magyarországra a világból. Cégünk legfőbb célja, hogy javítsa a fogyasztók életminőségét, életszínvonalát az élelmiszerek terén, segítse őket abban, hogy nyitottak legyenek az új, kiváló minőségű, de elérhető árú termékek iránt, valamint, hogy lehetőségük legyen az ízviláguk, élelmiszerek iránti érdeklődésük, kíváncsiságuk kibővítésére. A társaságunk által forgalmazott márkák egységes követelményrendszere a kiváló minőség, fogyasztásuk során egészséges életmód biztosítása, termékfejlesztés és az innováció, megújulás képviselete az adott piacon, iparágban. A márkák kiválasztásánál fontos szempont a termékdesign harmóniája a funkcionalitással, a részletek egyedisége, kidolgozottsága, amelyek által termékeink az első pillanattól kezdve akár a mindennapok vagy az ünnepek, rendezvények részeivé válnak. Akik a mi termékeinket fogyasztják, nemcsak a márkanevek népszerűsége, minősége, ára miatt vásárolják azokat, hanem azért, mert tudják, hogy ezáltal maguk és a környezetük egészsége és mindennapi életük számára jót tesznek.</div>
-                      <br>
-                      <p style="text-align:center"><img src="logo.JPG"></p>
+            <div class="container" id="jobboldal" style="background-color:#3a030f">
+                <div class="row">
+                   
+                    <div class="col-md" style="margin-top: 20px">
+                        <img src="felkelonap.JPG" id="picture" class="img-responsive" style="width:50%; height:auto">
                     </div>
+                    <div class="col-md">
+                            <strong>.:: Felkelő nap ::.</strong>
+                            <br>
+                            <br>
+                            <div style="text-align:justify">A termék elérhetősége:  <strong>Nem rendelhető</strong><br>
+                                <br>
+                                    A virágzó tea golyó friss zöld tea levélből lett hajtogatva. Antioxidáns hatását polifenol szerkezetű, flavonoid vegyületekkel éri el, melyek nagy koncentrációban fordulnak elő a teában. </div>
+                            <br>
+                            Ár:
+                            <strong>395 Ft</strong>
+                            <br>
+                            <br>
+                            <a href="contact.html" style="color:white">Kérdezzen az eladótól!</a>
+                            
+                        </div>
+                </div>
             </div>
-          
-            
+            <div class="col-md">
+            </div>
             <div style="color:white; font-size:13px">Az oldalon feltűntetett árak, bruttó árak! A 27%-os általános forgalmi adót tartamazzák.</div>
             
             <footer>  
-                    <div class="container">
+                    <div class="col-md">
+                            
                         <ul class="footer_bottom_ul_amrc" style="font-size:12px">
                         <li><a href="index.html">Főoldal</a></li>
                         <li class="divider-vertical-second-menu"></li>
@@ -154,24 +169,26 @@
                         <li class="divider-vertical-second-menu"></li>
                         <li><a href="contact.html">Kapcsolat</a></li>
                         </ul>
-                       
+                   
+                 
                         <p class="text-center">Copyright @2011 | <a href="#">Kneitner+Kneitner Hungary Bt.</a></p>
-    
+                    
                         <ul class="list-unstyled list-inline text-right">
-                                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>      
-                    </div> 
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    
             </footer>
+         
         </div>
-
-    </div>
+        </div>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js"></script>
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

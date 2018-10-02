@@ -1,13 +1,14 @@
 
-var modal = document.getElementById('myModal');
-var btn = document.getElementById("myBtn");
+
+var modal = document.getElementById("myModal");
+var btn0 = document.getElementById("myBtn");
 var btn1 = document.getElementById("myBtn1");
 var btn2 = document.getElementById("myBtn2");
 var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn0.onclick = function() {
     modal.style.display = "block";
 }
 
