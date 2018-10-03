@@ -38,3 +38,26 @@ window.onclick = function(event) {
     }
 }
 
+function regiszt(){
+    window.open("registration.html");
+}
+
+function belepes(){
+    alert("működik");
+let email = document.getElementById("exampleInputEmail1").value;
+let password = document.getElementById("exampleInputPassword1").value;
+
+let dataToSave = {
+    email_cim: email,
+    jelszo: password
+};
+
+fb.ref("bejelentkezes").once('value').then(data => {
+    
+let savedPosts = data.val();
+let path="bejelentkezes/"+savedPosts.length;
+fb.ref(path).set(dataToSave);
+savedPosts.length++; 
+});
+
+}
